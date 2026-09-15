@@ -1,0 +1,156 @@
+:root {
+  --bg: #f3efe6;
+  --ink: #1c1914;
+  --muted: #5f584c;
+  --line: #d8d0c2;
+  --accent: #1f4f45;
+  --card: #fffcf6;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  background:
+    radial-gradient(circle at top left, rgba(31, 79, 69, 0.08), transparent 28%),
+    linear-gradient(180deg, #f7f3ea 0%, var(--bg) 100%);
+  color: var(--ink);
+  line-height: 1.7;
+}
+
+a {
+  color: var(--accent);
+}
+
+header.site {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem 1.5rem;
+  border-bottom: 1px solid var(--line);
+  background: rgba(255, 252, 246, 0.92);
+  padding: 1rem 1.25rem;
+  position: sticky;
+  top: 0;
+  backdrop-filter: blur(8px);
+}
+
+header.site .logo {
+  text-decoration: none;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: var(--ink);
+}
+
+header.site nav a {
+  text-decoration: none;
+  margin-left: 1rem;
+  font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  font-size: 0.95rem;
+  color: var(--muted);
+}
+
+header.site nav a:hover {
+  color: var(--accent);
+}
+
+main {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 2.4rem 1.25rem 4rem;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.25;
+}
+
+h1 {
+  font-size: clamp(1.8rem, 4vw, 2.3rem);
+  margin-bottom: 0.8rem;
+}
+
+h2 {
+  margin-top: 2.4rem;
+  font-size: 1.35rem;
+}
+
+h3 {
+  margin-top: 1.5rem;
+  font-size: 1.08rem;
+}
+
+.lead {
+  color: var(--muted);
+  font-size: 1.08rem;
+  max-width: 38rem;
+}
+
+.card-list {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0 0;
+}
+
+.card-list li {
+  background: var(--card);
+  border: 1px solid var(--line);
+  padding: 1.1rem 1.15rem;
+  margin-bottom: 0.9rem;
+}
+
+.card-list a {
+  font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  font-weight: 650;
+  text-decoration: none;
+  font-size: 1.05rem;
+}
+
+.card-list div {
+  margin-top: 0.35rem;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+footer {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 0 1.25rem 2.5rem;
+  color: var(--muted);
+  font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  font-size: 0.9rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+  font-size: 0.95rem;
+  background: var(--card);
+}
+
+th,
+td {
+  border: 1px solid var(--line);
+  padding: 0.6rem 0.7rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+ul,
+ol {
+  padding-left: 1.2rem;
+}
+
+@media (max-width: 640px) {
+  header.site nav a {
+    margin-left: 0;
+    margin-right: 0.9rem;
+  }
+}
