@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://rovshenazarov.github.io/humanoid-robots/sitemap.xml
